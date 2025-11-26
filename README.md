@@ -23,6 +23,12 @@ schedule:
   - cron: '0 10 * * *'
 ```
 
+## 依赖管理
+
+项目使用 [requirements.txt](requirements.txt) 文件来管理 Python 依赖。GitHub Actions 工作流会自动安装这些依赖。
+
+要添加新的依赖，请在 [requirements.txt](requirements.txt) 文件中添加相应的包名和版本号。
+
 ## Cron 表达式参考
 
 Cron 表达式格式为：`分钟 小时 日 月 星期`
