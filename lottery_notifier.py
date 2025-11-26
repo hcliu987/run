@@ -126,7 +126,7 @@ class LotteryNotifier:
 
 def main():
     # 从环境变量获取配置，如果没有则使用默认值
-    bark_key = os.getenv('BARK_KEY', 'qEnhyuDqQAcAtCKRCBWJ4e')
+    bark_key = 'qEnhyuDqQAcAtCKRCBWJ4e'
     
     # 默认的双色球号码列表
     default_numbers = """11,13,17,20,23,31+11
