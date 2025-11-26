@@ -59,6 +59,25 @@ Cron 表达式格式为：`分钟 小时 日 月 星期`
 2. 选择相应的工作流
 3. 点击 "Run workflow" 按钮
 
+## 推送到 GitHub
+
+要将此代码推送到您自己的 GitHub 仓库，请按照以下步骤操作：
+
+1. 在 GitHub 上创建一个新的仓库（不要初始化 README、.gitignore 或许可证）
+2. 复制您的仓库 URL（格式为：`https://github.com/yourusername/your-repo-name.git`）
+3. 编辑 [push_to_github.sh](push_to_github.sh) 文件，将 `GITHUB_REPO_URL` 变量替换为您的仓库 URL
+4. 运行推送脚本：
+   ```bash
+   ./push_to_github.sh
+   ```
+
+或者，您也可以手动执行以下命令：
+```bash
+git remote add origin https://github.com/yourusername/your-repo-name.git
+git branch -M main
+git push -u origin main
+```
+
 ## 自定义脚本
 
 要使用自己的 Python 脚本，请替换相应的 Python 文件内容，并根据需要修改工作流中的依赖安装部分。
